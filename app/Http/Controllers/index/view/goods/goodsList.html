@@ -1,0 +1,336 @@
+{extend name="Base/indexBase"}
+
+{block name="title"}商品列表页{/block}
+
+{block name="cssjs"}
+  {css href="__STATIC__/css/goodsList.css" /}
+{/block}
+
+{block name="main"}
+<!--网页主体内容-->
+<section class="center">
+  <!--Begin Menu Begin-->
+  <div class="menu_bg">
+      <div class="menu">
+          <!--Begin 商品分类详情 Begin-->
+          <nav class="nav">
+              <div class="nav_t">全部商品分类</div>
+          </nav>
+          <!--End 商品分类详情 End-->
+         <nav>
+                  <ul class="menu_r">
+                      <li class="active"><a href="index.html"><i style="color: blue;">首页</i></a></li>
+                      <li class="active"><a href="fruit.html"><i style="color: blue;">食品点心</i></a></li>
+                      <li><a href="fruit2.html"><i style="color: blue;">比淘生鲜</i></a></li>
+                      <li><a href="toy.html"><i style="color: blue;">儿童玩具</i></a></li>
+                      <li><a href="book.html"><i style="color: blue;">图书</i></a></li>
+                      <li><a href="#"><i style="color: blue;">运动</i></a></li>
+                      <li><a href="#"><i style="color: blue;">服装</i></a></li>
+                      <li><a href="">比淘团购</a></li>
+                  </ul>
+              </nav>
+          <a href="#" class="m_ad"><img src="img/phone.png" alt=""/></a>
+      </div>
+  </div>
+
+
+  <!--End Menu End-->
+  <div class="i_bg">
+      <div class="postion">
+          <span class="fl">全部 > "儿童玩具" </span>
+      
+      </div>
+      <!--Begin 筛选条件 Begin-->
+      <div class="content ">
+          <table border="0" class="choice">
+              <tr>
+                  <td width="70">&nbsp; 品牌：</td>
+                  <td class="td_a">
+                      <a href="#" class="now">京寻</a>
+                      <a href="#">佳沛zespri</a>
+                      <a href="#">玉靖生鲜</a>
+                      <a href="#">都乐Dole</a>
+                      <a href="#">沙窝曙光</a>
+                      <a href="#">聚享优果</a>
+                      <a href="#">鼎宴堂</a>
+                      <a href="#">帆儿庄园</a>
+                      <a href="#">味蕾乐</a>
+                      <a href="#">新奇士</a>
+                      <a href="#">康乐欣</a>
+                      <a href="#">优鲜果</a>
+                      <a href="#">京寻</a>
+                      <a href="#">佳沛zespri</a>
+                      <a href="#">都乐Dole</a>
+                      <a href="#">沙窝</a>
+                  </td>
+              </tr>
+              <tr>
+                  <td>&nbsp; 价格：</td>
+                  <td class="td_a">
+                      <a href="#">0-199</a>
+                      <a href="#" class="now">200-399</a>
+                      <a href="#">400-599</a>
+                      <a href="#">600-899</a>
+                      <a href="#">900-1299</a>
+                      <a href="#">1300-1399</a>
+                      <a href="#">1400以上</a>
+                  </td>
+              </tr>
+              <tr>
+                  <td>原产地：</td>
+                  <td class="td_a">
+                      <a href="#">泰国</a>
+                      <a href="#">新西兰</a>
+                      <a href="#">澳大利亚</a>
+                      <a href="#">墨西哥</a>
+                      <a href="#">美国</a>
+                      <a href="#">马来西亚</a>
+                  </td>
+              </tr>
+              <tr>
+                  <td>售卖方式：</td>
+                  <td class="td_a">
+                      <a href="#">单品</a>
+                      <a href="#">组合</a>
+                   
+                  </td>
+              </tr>
+          </table>
+      </div>
+      <!--End 筛选条件 End-->
+
+      <div class="content ">
+         
+          <div class="l_list">
+              <div class="list_t">
+            <span class="fl list_or">
+                <a href="#" class="now">默认</a>
+                  <a href="#">
+                      <span class="fl">销量</span>
+                      <span class="i_up">销量从低到高显示</span>
+                      <span class="i_down">销量从高到低显示</span>
+                  </a>
+                  <a href="#">
+                      <span class="fl">价格</span>
+                      <span class="i_up">价格从低到高显示</span>
+                      <span class="i_down">价格从高到低显示</span>
+                  </a>
+                  <a href="#">新品</a>
+              </span>
+               
+              </div>
+              <div class="list_c">
+
+                  <ul class="cate_list">
+                      <li>
+                          <div class="img2"><a href="{:url('goodsDetail')}"><img src="img/wanju4.JPG" width="210" height="185"/></a></div>
+                          <div class="price">
+                              <span>￥159.90</span>
+                          </div>
+                          <div class="name"><i style="color: blue;"><a href="toy2.html"><i style="color: blue;">
+                            盈佳智能机器狗儿童玩具男孩玩具女孩早教机</i></a></i></div>
+                          <div class="carbg">
+                              <a href="#" class="ss">收藏</a>
+                              <a href="#" class="j_car">加入购物车</a>
+                          </div>
+                      </li>
+                      <li>
+                          <div class="img"><a href="#"><img src="img/wanju5.JPG" width="210" height="185"/></a></div>
+                          <div class="price">
+                              <span>￥99.90</span>
+                          </div>
+                          <div class="name"><a href="toy3.html"><i style="color: blue;">
+                            儿童玩具男1-2-3岁男孩玩具汽车三岁小孩玩具4-6岁</i></a></div>
+                          <div class="carbg">
+                              <a href="#" class="ss">收藏</a>
+                              <a href="#" class="j_car">加入购物车</a>
+                          </div>
+                      </li>
+                      <li>
+                          <div class="img"><a href="#"><img src="img/wanju6.JPG" width="210" height="185"/></a></div>
+                          <div class="price">
+                              <span>￥149.90</span>
+                          </div>
+                          <div class="name"><a href="toy4.html"><i style="color: blue;">
+                            小米生态链 小寻11.65英寸液晶彩色大屏儿童手写板绘画板</i></a></div>
+                          <div class="carbg">
+                              <a href="#" class="ss">收藏</a>
+                              <a href="#" class="j_car">加入购物车</a>
+                          </div>
+                      </li>
+               <li>
+                          <div class="img"><a href="#"><img src="img/wanju7.JPG" width="210" height="185"/></a></div>
+                          <div class="price">
+                              <span>￥49.90</span>
+                          </div>
+                          <div class="name"><a href="toy5.html"><i style="color: blue;">
+                            抖音玩具儿童亲子玩具大鲨鱼咬手指鲨鱼咬人鲨鱼</i></a></div>
+                          <div class="carbg">
+                              <a href="#" class="ss">收藏</a>
+                              <a href="#" class="j_car">加入购物车</a>
+                          </div>
+                      </li>
+                      <li>
+                          <div class="img"><a href="#"><img src="img/wanju1.JPG" width="210" height="185"/></a></div>
+                          <div class="price">
+                              <span>￥79.00</span>
+                          </div>
+                          <div class="name"><a href="#">儿童玩具橙色转转球早教音乐学爬行</a></div>
+                          <div class="carbg">
+                              <a href="#" class="ss">收藏</a>
+                              <a href="#" class="j_car">加入购物车</a>
+                          </div>
+                      </li>
+     
+                      <li>
+                          <div class="img"><a href="#"><img src="img/wanju2.JPG" width="210" height="185"/></a></div>
+                          <div class="price">
+                              <span>￥58.00</span>
+                          </div>
+                          <div class="name"><a href="#">
+                            趣致 600+大小颗粒积木桌子玩具 2/3-8岁男女孩适用</a></div>
+                          <div class="carbg">
+                              <a href="#" class="ss">收藏</a>
+                              <a href="#" class="j_car">加入购物车</a>
+                          </div>
+                      </li>
+                      <li>
+                          <div class="img"><a href="#"><img src="img/wanju3.JPG" width="210" height="185"/></a></div>
+                          <div class="price">
+                              <span>￥78.00</span>
+                          </div>
+                          <div class="name"><a href="#">
+                            宝乐星 儿童玩具车男孩变形汽车停车场 </a></div>
+                          <div class="carbg">
+                              <a href="#" class="ss">收藏</a>
+                              <a href="#" class="j_car">加入购物车</a>
+                          </div>
+                      </li>
+                      <li>
+                          <div class="img"><a href="#"><img src="img/wanju5.JPG" width="210" height="185"/></a></div>
+                          <div class="price">
+                              <span>￥99.90</span>
+                          </div>
+                          <div class="name">
+                            儿童玩具男1-2-3岁男孩玩具汽车三岁小孩玩具4-6岁</a></div>
+                          <div class="carbg">
+                              <a href="#" class="ss">收藏</a>
+                              <a href="#" class="j_car">加入购物车</a>
+                          </div>
+                      </li>
+                      <li>
+                          <div class="img"><a href="#"><img src="img/wanju6.JPG" width="210" height="185"/></a></div>
+                          <div class="price">
+                              <span>￥149.90</span>
+                          </div>
+                          <div class="name">
+                            小米生态链 小寻11.65英寸液晶彩色大屏儿童手写板绘画板</i></a></div>
+                          <div class="carbg">
+                              <a href="#" class="ss">收藏</a>
+                              <a href="#" class="j_car">加入购物车</a>
+                          </div>
+                      </li>
+                           <li>
+                          <div class="img2"><a href="#"><img src="img/wanju4.JPG" width="210" height="185"/></a></div>
+                          <div class="price">
+                              <span>￥159.90</span>
+                          </div>
+                          <div class="name"><i style="color: blue;"><a href="toy2.html"><i style="color: blue;">
+                            盈佳智能机器狗儿童玩具男孩玩具女孩早教机</i></a></i></div>
+                          <div class="carbg">
+                              <a href="#" class="ss">收藏</a>
+                              <a href="#" class="j_car">加入购物车</a>
+                          </div>
+                      </li>
+                      <li>
+                          <div class="img"><a href="#"><img src="img/wanju5.JPG" width="210" height="185"/></a></div>
+                          <div class="price">
+                              <span>￥99.90</span>
+                          </div>
+                          <div class="name"><a href="toy3.html"><i style="color: blue;">
+                            儿童玩具男1-2-3岁男孩玩具汽车三岁小孩玩具4-6岁</i></a></div>
+                          <div class="carbg">
+                              <a href="#" class="ss">收藏</a>
+                              <a href="#" class="j_car">加入购物车</a>
+                          </div>
+                      </li>
+                      
+                       <li>
+                          <div class="img"><a href="#"><img src="img/wanju7.JPG" width="210" height="185"/></a></div>
+                          <div class="price">
+                              <span>￥49.90</span>
+                          </div>
+                          <div class="name"><a href="toy5.html"><i style="color: blue;">
+                            抖音玩具儿童亲子玩具大鲨鱼咬手指鲨鱼咬人鲨鱼</i></a></div>
+                          <div class="carbg">
+                              <a href="#" class="ss">收藏</a>
+                              <a href="#" class="j_car">加入购物车</a>
+                          </div>
+                      </li>
+                      <li>
+                          <div class="img"><a href="#"><img src="img/wanju1.JPG" width="210" height="185"/></a></div>
+                          <div class="price">
+                              <span>￥79.00</span>
+                          </div>
+                          <div class="name"><a href="#">儿童玩具橙色转转球早教音乐学爬行</a></div>
+                          <div class="carbg">
+                              <a href="#" class="ss">收藏</a>
+                              <a href="#" class="j_car">加入购物车</a>
+                          </div>
+                      </li>
+                       <li>
+                          <div class="img"><a href="#"><img src="img/wanju3.JPG" width="210" height="185"/></a></div>
+                          <div class="price">
+                              <span>￥78.00</span>
+                          </div>
+                          <div class="name"><a href="#">
+                            宝乐星 儿童玩具车男孩变形汽车停车场 </a></div>
+                          <div class="carbg">
+                              <a href="#" class="ss">收藏</a>
+                              <a href="#" class="j_car">加入购物车</a>
+                          </div>
+                      </li>
+                      <li>
+                          <div class="img"><a href="#"><img src="img/wanju5.JPG" width="210" height="185"/></a></div>
+                          <div class="price">
+                              <span>￥99.90</span>
+                          </div>
+                          <div class="name">
+                            儿童玩具男1-2-3岁男孩玩具汽车三岁小孩玩具4-6岁</a></div>
+                          <div class="carbg">
+                              <a href="#" class="ss">收藏</a>
+                              <a href="#" class="j_car">加入购物车</a>
+                          </div>
+                      </li>
+                      <li>
+                          <div class="img"><a href="#"><img src="img/wanju6.JPG" width="210" height="185"/></a></div>
+                          <div class="price">
+                              <span>￥149.90</span>
+                          </div>
+                          <div class="name">
+                            小米生态链 小寻11.65英寸液晶彩色大屏儿童手写板绘画板</i></a></div>
+                          <div class="carbg">
+                              <a href="#" class="ss">收藏</a>
+                              <a href="#" class="j_car">加入购物车</a>
+                          </div>
+                      </li>
+                        
+                  </ul>
+
+                  <div class="pages">
+                      <a href="#" class="p_pre">上一页</a>
+                      <a href="#" class="cur">1</a>
+                      <a href="#">2</a>
+                      <a href="#">3</a>
+                      <span>...</span>
+                      <a href="#">20</a>
+                      <a href="#" class="p_pre">下一页</a>
+                  </div>
+
+
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+{/block}

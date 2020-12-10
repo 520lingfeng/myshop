@@ -1,0 +1,94 @@
+{extend name="Base/indexBase"}
+
+{block name="title"}我的支付 比淘官网{/block}
+
+{block name="cssjs"}
+    {css href="__STATIC__/css/pay.css" /}
+{/block}
+
+{block name="main"}
+<!--主体部分-->
+<section class="center">
+<!--Begin Menu Begin-->
+<div class="menu_bg">
+<div class="menu">
+    <!--Begin 商品分类详情 Begin-->
+    <nav class="nav">
+        <div class="nav_t">全部商品分类</div>
+    </nav>
+    <!--End 商品分类详情 End-->
+    <nav>
+            <ul class="menu_r">
+                <li class="active"><a href="index.html"><i style="color: blue;">首页</i></a></li>
+                <li class="active"><a href="fruit.html"><i style="color: blue;">食品点心</i></a></li>
+                <li><a href="fruit2.html"><i style="color: blue;">比淘生鲜</i></a></li>
+                <li><a href="toy.html"><i style="color: blue;">儿童玩具</i></a></li>
+                <li><a href="book.html"><i style="color: blue;">图书</i></a></li>
+                <li><a href="#"><i style="color: blue;">运动</i></a></li>
+                <li><a href="#"><i style="color: blue;">服装</i></a></li>
+                <li><a href="">比淘团购</a></li>
+            </ul>
+        </nav>
+    <a href="#" class="m_ad"><img src="img/phone.png" alt=""/></a>
+</div>
+</div>
+<!--End Menu End-->
+
+<!--内容-->
+<div id="contentCon">
+<div >
+<span>
+    <h2>选择付款方式</h2>
+    <p>订单号：310310310310</p>
+</span>
+<ol id="contentCon_1">
+    <p>应付：</p>
+    <span>¥257.00</span>
+</ol>
+</div>
+
+<ul>
+<li class="box01">
+    <input type="radio">
+    <i><img src="img/zhit.png"></i>
+</li>
+<li class="box02">
+    <div></div>
+    <span>
+        <p>扫描使用手机端支付宝</p>
+        <p class="text02">完成支付</p>
+    </span>
+</li>
+</ul>
+<ul>
+<li class="box01">
+    <input type="radio">
+    <i class="pic02"><img src="img/wxt.png"></i>
+</li>
+<li class="box02">
+    <div><img src="img/erweima_03.png"></div>
+    <span>
+        <p>请使用微信扫描二维码</p>
+        <p class="text02">完成支付</p>
+    </span>
+</li>
+</ul>
+<ol>
+<li>
+    <input type="radio">
+    <i><img src="img/yinglian.png"></i>
+</li>
+<li class="box03">
+    <a href="#"><img src="img/logo_03.jpg"></a>
+    <a href="#" id="logo01"><img src="img/logo_05.jpg"></a>
+    <a href="#"><img src="img/logo_07.jpg"></a>
+</li>
+<li>
+    <a href="#"><img src="img/logo_12.jpg"></a>
+    <a href="#" id="logo02"><img src="img/logo_14.jpg"></a>
+    <a href="#"><img src="img/logo_17.jpg"></a>
+</li>
+</ol>
+</div>
+</section>
+{/block}

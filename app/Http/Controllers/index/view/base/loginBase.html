@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>{block name="title"}title{/block}</title>
+    {css href="__STATIC__/css/base.css" /}
+    {js href="__STATIC__/js/jquery-1.7.2.min.js" /}
+    {block name="cssjs"}cssjs{/block}
+</head>
+<body>
+	<header id="headNav">
+		<div class="innerNav clear">
+			<a class="fl" href="#"><img src="img/loginlogo.jpg" alt=""/></a>
+			<div class="headFont fr">
+				<span>您好，欢迎光临比淘比淘！<a href="{:url('/login')}">请登录</a></span>
+				<a class="helpLink" href="#"><i class="runbun"></i>帮助中心<i class="turnb"></i></a>
+			</div>
+			<div class="outHelp">
+				<ul class="helpYou" style="display: none;">
+					<li><a href="#">包裹跟踪</a></li>
+					<li><a href="#">常见问题</a></li>
+					<li><a href="#">在线退换货</a></li>
+					<li><a href="#">在线投诉</a></li>
+					<li><a href="#">配送范围</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+
+    {block name="main"}main{/block}
+    
+	<footer id="footNav">
+		<p><a href="#">备案/许可证编号：粤ICP备310310号-1-www.btbt.com</a> </p>
+		<p>Copyright© 比淘比淘网上超市 2019-2020，All Rights Reserved. 复制必究 ,
+            Technical Support: 310 Group <br/></p>
+	</footer>
+</body>
+</html>

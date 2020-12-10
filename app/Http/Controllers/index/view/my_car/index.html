@@ -1,0 +1,172 @@
+{extend name="Base/indexBase"}
+
+{block name="cssjs"}
+{css href="__STATIC__/css/myCar.css" /}
+{/block}
+
+{block name="main"}
+<!--主体部分-->
+<section class="center">
+    <!--Begin Menu Begin-->
+    <div class="menu_bg">
+        <div class="menu">
+            <!--Begin 商品分类详情 Begin-->
+            <nav class="nav">
+                <div class="nav_t">全部商品分类</div>
+            </nav>
+            <!--End 商品分类详情 End-->
+            <nav>
+                <ul class="menu_r">
+                    <li class="active"><a href="index.html"><i style="color: blue;">首页</i></a></li>
+                    <li class="active"><a href="fruit.html"><i style="color: blue;">食品点心</i></a></li>
+                    <li><a href="fruit2.html"><i style="color: blue;">比淘生鲜</i></a></li>
+                    <li><a href="toy.html"><i style="color: blue;">儿童玩具</i></a></li>
+                    <li><a href="book.html"><i style="color: blue;">图书</i></a></li>
+                    <li><a href="#"><i style="color: blue;">运动</i></a></li>
+                    <li><a href="#"><i style="color: blue;">服装</i></a></li>
+                    <li><a href="">比淘团购</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="m_ad"><img src="img/phone.png" alt="" /></a>
+        </div>
+    </div>
+    <!--End Menu End-->
+
+
+    <!--内容-->
+    <div id="contentCon">
+        <ul>
+            <li>
+                <p>我的商品（3）</p>
+                <span></span>
+            </li>
+            <p>优惠（2）</p>
+        </ul>
+        <section class="cartMain">
+            <div class="cartMain_hd">
+                <ul class="order_lists cartTop">
+                    <li class="list_chk">
+                        <!--所有商品全选-->
+                        <input type="checkbox" id="all" class="whole_check">
+                        <label for="all"></label>
+                        全选
+                    </li>
+                    <li class="list_con">商品信息</li>
+                    <li class="list_info">商品参数</li>
+                    <li class="list_price">单价（元）</li>
+                    <li class="list_amount">数量</li>
+                    <li class="list_sum">小计（元）</li>
+                    <li class="list_op">操作</li>
+                </ul>
+            </div>
+
+            <div class="cartBox">
+                <div class="shop_info">
+
+                </div>
+                <div class="order_content">
+                    <ul class="order_lists">
+                        <li class="list_chk">
+                            <input type="checkbox" id="checkbox_2" class="son_check">
+
+                        </li>
+                        <li class="list_con">
+                            <div class="list_img"><a href="#"><img src="img/fruit1.jpg" alt=""></a></div>
+                            <div class="list_text"><a href="#">京觅<br>智利进口车厘子巨无霸JJJ级 1磅装</a></div>
+                        </li>
+                        <li class="list_info">
+                            <p>净含量：500克</p>
+                            <p>果&nbsp;&nbsp;&nbsp;&nbsp;径：30-32mm</p>
+                        </li>
+                        <li class="list_price">
+                            <p class="price">￥109.00</p>
+                        </li>
+                        <li class="list_amount">
+                            <div class="amount_box">
+                                <a href="#" class="reduce reSty">-</a>
+                                <input type="text" value="1" class="sum">
+                                <a href="#" class="plus">+</a>
+                            </div>
+                        </li>
+                        <li class="list_sum">
+                            <p class="sum_price">￥109.00</p>
+                        </li>
+                        <li class="list_op">
+                            <p class="del"><a href="#" class="delBtn">移除商品</a></p>
+                        </li>
+                    </ul>
+
+                    <ul class="order_lists">
+                        <li class="list_chk">
+                            <input type="checkbox" id="checkbox_3" class="son_check">
+                            <label for="checkbox_3"></label>
+                        </li>
+                        <li class="list_con">
+                            <div class="list_img"><a href="#"><img src="img/fruit2.jpg" alt=""></a></div>
+                            <div class="list_text"><a href="#">京觅<br>澳大利亚直采鲜橙 精品澳橙12粒 </a></div>
+                        </li>
+                        <li class="list_info">
+                            <p>净含量：500克</p>
+                            <p>单&nbsp;&nbsp;&nbsp;&nbsp;果：130-180g</p>
+                        </li>
+                        <li class="list_price">
+                            <p class="price">￥59.00</p>
+                        </li>
+                        <li class="list_amount">
+                            <div class="amount_box">
+                                <a href="#" class="reduce reSty">-</a>
+                                <input type="text" value="1" class="sum">
+                                <a href="#" class="plus">+</a>
+                            </div>
+                        </li>
+                        <li class="list_sum">
+                            <p class="sum_price">￥59.00</p>
+                        </li>
+                        <li class="list_op">
+                            <p class="del"><a href="#" class="delBtn">移除商品</a></p>
+                        </li>
+                    </ul>
+                    <ul class="order_lists">
+                        <li class="list_chk">
+                            <input type="checkbox" id="checkbox_6" class="son_check">
+                            <label for="checkbox_6"></label>
+                        </li>
+                        <li class="list_con">
+                            <div class="list_img"><a href="#"><img src="img/fruit3.jpg" alt=""></a></div>
+                            <div class="list_text"><a href="#">开皇<br>马来西亚苏丹王榴莲果肉液氮冷冻水果</a></div>
+                        </li>
+                        <li class="list_info">
+                            <p>净含量：400克</p>
+                            <p>规&nbsp;&nbsp;&nbsp;&nbsp;格：一盒</p>
+                        </li>
+                        <li class="list_price">
+                            <p class="price">￥89.00</p>
+                        </li>
+                        <li class="list_amount">
+                            <div class="amount_box">
+                                <a href="#" class="reduce reSty">-</a>
+                                <input type="text" value="1" class="sum">
+                                <a href="#" class="plus">+</a>
+                            </div>
+                        </li>
+                        <li class="list_sum">
+                            <p class="sum_price">￥89.00</p>
+                        </li>
+                        <li class="list_op">
+                            <p class="del"><a href="#" class="delBtn">移除商品</a></p>
+                        </li>
+                    </ul>
+                </div>
+                <div id="amount">
+                    <p>
+                    <h2>合计:￥257</h2>
+                    <h2 id="amount_1"> &nbsp;&nbsp; &nbsp;&nbsp;<a href="{:url('/pay')}">去结算</a>
+                    </h2>
+                    </p>
+                </div>
+            </div>
+
+
+    </div>
+</section>
+{/block}
