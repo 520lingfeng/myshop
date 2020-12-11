@@ -10,10 +10,12 @@
 // +----------------------------------------------------------------------
 use Illuminate\Support\Facades\Route;
 # 登录页
-// Route::get('login', 'Login/login');
-Route::get('admin/login', 'Admin\LoginController@login');
-// # 注册页
-// Route::get('register', 'Login/register');
+Route::get('admin/login', 'Admin\UserController@login');
+# 注册页
+Route::get('register', 'Admin\UserController@register');
+# 处理注册页
+Route::post('register_msg', 'Admin\UserController@registerMsg');
+
 // # 获取验证码
 // Route::post('mobileYzm', 'Login/getMobileYzm');
 // # 验证验证码

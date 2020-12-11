@@ -2,28 +2,18 @@
 
 namespace App;
 
-use Illuminate\Notifications\Notifiable;
-use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Database\Eloquent\Model;
 
-class User extends Authenticatable
+class User extends Model
 {
-    use Notifiable;
+    // 主键ID
+    protected $primaryKey = 'userid';
 
     /**
-     * The attributes that are mass assignable.
-     *
-     * @var array
+     * 默认情况下，Eloquent会默认数据表中存在created_at和updated_at这两个字段
+     * 不需要这两个字段 设置为false
+     * 该模型是否被自动维护时间戳
+     * @var bool
      */
-    protected $fillable = [
-        'name', 'email', 'password',
-    ];
-
-    /**
-     * The attributes that should be hidden for arrays.
-     *
-     * @var array
-     */
-    protected $hidden = [
-        'password', 'remember_token',
-    ];
+    public $timestamps = false;
 }
