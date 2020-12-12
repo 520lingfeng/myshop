@@ -3,7 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <title>网站后台管理系统</title>
+    <meta name="keywords" content="袜子，鞋，电脑，手机" />
+    <meta name="description" content="120 words" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/favicon.ico" type="image/gif" />
     <link rel="stylesheet" href="{{URL::asset(__ADMIN__.'assets/css/bootstrap.min.css')}}" />
     <link rel="stylesheet" href="{{URL::asset(__ADMIN__.'assets/css/font-awesome.min.css')}}" />
 
