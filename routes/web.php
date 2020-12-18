@@ -8,13 +8,12 @@
 // +----------------------------------------------------------------------
 // | Author: liu21st <liu21st@gmail.com>
 // +----------------------------------------------------------------------
-# 默认是不用引入改命名空间的 vscode自身的原因
-use Illuminate\Support\Facades\Route;
+
 
 # 注册页
-Route::get('register', 'Admin\UserController@register');
+Route::get('register', 'Index\UserController@register');
 # 处理注册页
-Route::post('register_msg', 'Admin\UserController@registerMsg');
+Route::post('register_msg', 'Index\UserController@registerMsg');
 
 // # 获取验证码
 // Route::post('mobileYzm', 'Login/getMobileYzm');
