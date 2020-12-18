@@ -8,9 +8,9 @@
 // +----------------------------------------------------------------------
 // | Author: liu21st <liu21st@gmail.com>
 // +----------------------------------------------------------------------
+# 默认是不用引入改命名空间的 vscode自身的原因
 use Illuminate\Support\Facades\Route;
-# 登录页
-Route::get('admin/login', 'Admin\UserController@login');
+
 # 注册页
 Route::get('register', 'Admin\UserController@register');
 # 处理注册页
@@ -30,8 +30,7 @@ Route::post('register_msg', 'Admin\UserController@registerMsg');
 // Route::get('goodsDetail', 'Goods/goodsDetail');
 
 # 后台
-Route::get('/admin', 'Admin\IndexController@index');
-Route::get('/home', 'Admin\IndexController@home');
+include __DIR__.'/admin/web.php';
 
 // # 管理员管理 - 个人信息
 // Route::get('adminInformation', 'admin/Information/index');

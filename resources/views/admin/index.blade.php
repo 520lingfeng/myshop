@@ -31,7 +31,7 @@
 		style="border: 0; width: 100%; background-color: #fff;"
 		name="iframe"
 		frameborder="0"
-		src="/home"
+		src="/admin/home"
 	>
 	</iframe>
 
