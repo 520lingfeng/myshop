@@ -39,6 +39,6 @@ class UserController extends Controller
     }
 
     public function registerMsg(RegisterPost $registerPost) {
-        
+    
     }
 }
