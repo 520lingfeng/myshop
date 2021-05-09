@@ -71,4 +71,10 @@ Route::get('/test','Admin/TestController@index');
 //         # 管理员管理 - 管理员列表
 //         'adminstrators' => 'admin/Adminstrators',
 //     ],
+<<<<<<< Updated upstream
+=======
 // ];
+
+>>>>>>> Stashed changes
+# 测试2
+Route::get('/test2', 'Admin\TestController@index');
