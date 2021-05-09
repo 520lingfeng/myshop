@@ -33,6 +33,9 @@ Route::post('register_msg', 'Admin\UserController@registerMsg');
 Route::get('/admin', 'Admin\IndexController@index');
 Route::get('/home', 'Admin\IndexController@home');
 
+# 测试
+Route::get('/test','Admin/TestController@index');
+
 // # 管理员管理 - 个人信息
 // Route::get('adminInformation', 'admin/Information/index');
 
